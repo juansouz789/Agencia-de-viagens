@@ -8,7 +8,7 @@ async function iniciar() {
         const paises = await buscarDestinosAPI(); //chamada da api e atribuição a constante paises
 
 
-        paises.slice(0, 6).forEach(pais => {
+        paises.slice(10, 16).forEach(pais => {
             const card = criarCard(pais);
             containerDestinos.appendChild(card);
         });
